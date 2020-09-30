@@ -1,0 +1,15 @@
+Doctests for solve_equations.py
+
+To run:
+  python -m doctest solve_equations.txt
+  python -m doctest -v solve_equations.txt
+
+Example 1: solving linear equations  
+  
+>>> from solve_equations import solve_linear
+>>> solve_linear(2,7)
+-3.5
+>>> 2*solve_linear(2,7)+7
+0.0
+
+
