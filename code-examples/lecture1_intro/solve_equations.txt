@@ -18,5 +18,9 @@ Example 2: solving quadratic equations
 >>> solve_quadratic(1, -23, 42)
 (21.0, 2.0)
 
+Check for discriminant < 0
+
+>>> solve_quadratic(1, 0, 1)
+'No real roots'
 
 
