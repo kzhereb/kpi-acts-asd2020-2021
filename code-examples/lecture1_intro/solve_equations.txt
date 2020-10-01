@@ -12,4 +12,11 @@ Example 1: solving linear equations
 >>> 2*solve_linear(2,7)+7
 0.0
 
+Example 2: solving quadratic equations
+
+>>> from solve_equations import solve_quadratic
+>>> solve_quadratic(1, -23, 42)
+(21.0, 2.0)
+
+
 
