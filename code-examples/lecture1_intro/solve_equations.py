@@ -23,12 +23,27 @@ def solve_quadratic(a,b,c):
 """
 Approximate solution of quadratic equation a * x^2 + b * x + c == 0
 """
-
 def solve_approximate(a,b,c,steps = 100):
   x = 0
   for i in range(steps):
     f_x = a * x * x + b * x + c 
     df_x = 2 * x + b 
     x = x - f_x/df_x
+  return x
+
+"""
+Approximate solution of quadratic equation a * x^2 + b * x + c == 0
+"""
+def solve_approximate_eps(a,b,c,eps = 1e-10):
+  x = 0
+  delta = 1
+  steps = 0
+  while abs(delta) > eps:
+    f_x = a * x * x + b * x + c 
+    df_x = 2 * x + b
+    delta = f_x/df_x
+    x = x - delta
+    steps += 1
+  print(f"solved after {steps} steps")
   return x
   

@@ -29,5 +29,12 @@ Example 3: numeric solution using Newton method
 >>> solve_approximate(1,-23,42)
 2.0
 
+Specify error instead of fixed number of steps
+
+>>> from solve_equations import solve_approximate_eps
+>>> solve_approximate_eps(1,-23,42)
+solved after 5 steps
+2.0
+
 
 
