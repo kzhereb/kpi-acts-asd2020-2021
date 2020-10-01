@@ -29,6 +29,13 @@ Example 3: numeric solution using Newton method
 >>> solve_approximate(1,-23,42)
 2.0
 
+Case when a != 1
+
+>>> from solve_equations import solve_approximate
+>>> solve_approximate(3, 1, -2)
+0.6666666666666666
+
+
 Specify error instead of fixed number of steps
 
 >>> from solve_equations import solve_approximate_eps
