@@ -23,4 +23,11 @@ Check for discriminant < 0
 >>> solve_quadratic(1, 0, 1)
 'No real roots'
 
+Example 3: numeric solution using Newton method
+
+>>> from solve_equations import solve_approximate
+>>> solve_approximate(1,-23,42)
+2.0
+
+
 
